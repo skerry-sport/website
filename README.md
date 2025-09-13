@@ -4,7 +4,7 @@ The official website for the Skerry Sport One-Design Class Association, hosted o
 
 ## About
 
-This website serves the Skerry Sport One-Design Class Association (SSODCA), a nascent sailing class for boats built from the Skerry kit or plans as published by Chesapeake Light Craft.
+This website serves the Skerry Sport One-Design Class Association (SSODCA), a nascent sailing class for boats built from the CLC Skerry kit or plans as published by Chesapeake Light Craft.
 
 ## Website Features
 
@@ -36,4 +36,4 @@ We welcome contributions! Please see our [founding documents repository](https:/
 
 ## License
 
-Website content is available under appropriate open source licensing. The Skerry Sport design is the property of Chesapeake Light Craft.
+Website content is available under appropriate open source licensing. The CLC Skerry design is the property of Chesapeake Light Craft.
