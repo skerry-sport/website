@@ -8,90 +8,27 @@
     
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    
-    <!-- Custom styles -->
-    <style>
-        :root {
-            --pico-font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        nav {
-            background: var(--pico-background-color);
-            border-bottom: 1px solid var(--pico-muted-border-color);
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        nav li {
-            margin: 0 1rem;
-        }
-        
-        nav a {
-            text-decoration: none;
-            padding: 1rem;
-            display: block;
-            color: var(--pico-color);
-        }
-        
-        nav a:hover {
-            color: var(--pico-primary);
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-        
-        footer {
-            background: var(--pico-card-background-color);
-            padding: 2rem 0;
-            margin-top: 3rem;
-            text-align: center;
-            border-top: 1px solid var(--pico-muted-border-color);
-        }
-        
-        .content {
-            padding: 3rem 0;
-        }
-    </style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html" class="logo">SSODCA</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="fleets.html">Fleets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>SSODCA</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="fleets.html">Fleets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <header class="page-header">
-        <div class="container">
+    <main class="container">
+        <header>
             <h1>About the Association</h1>
             <p>Learn about our purpose, governance, and the boats we sail</p>
-        </div>
-    </header>
-
-    <main class="content">
-        <div class="container">
+        </header>
             <article>
                 <h2>Our Purpose</h2>
                 <p>The Skerry Sport One-Design Class Association (SSODCA) exists to:</p>
@@ -120,26 +57,26 @@
                 <p>The Association is administered by elected officers who serve one-year terms:</p>
                 
                 <div class="grid">
-                    <div>
+                    <article>
                         <h4>🏅 Commodore</h4>
                         <p>Chief executive and representative of the class</p>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <h4>⚓ Vice Commodore</h4>
                         <p>Assists the Commodore and oversees events</p>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <h4>📝 Secretary</h4>
                         <p>Maintains records, correspondence, and meeting minutes</p>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <h4>💰 Treasurer</h4>
                         <p>Manages funds and membership dues</p>
-                    </div>
-                    <div>
+                    </article>
+                    <article>
                         <h4>📏 Class Measurer</h4>
                         <p>Oversees interpretation and enforcement of class rules</p>
-                    </div>
+                    </article>
                 </div>
 
                 <h2>Annual General Meeting</h2>
@@ -161,11 +98,9 @@
         </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.</p>
-            <p>The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a></p>
-        </div>
+    <footer class="container">
+        <small>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.<br>
+        The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a></small>
     </footer>
 </body>
 </html>

@@ -8,231 +8,93 @@
     
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    
-    <!-- Custom styles -->
-    <style>
-        :root {
-            --pico-font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        nav {
-            background: var(--pico-background-color);
-            border-bottom: 1px solid var(--pico-muted-border-color);
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        nav li {
-            margin: 0 1rem;
-        }
-        
-        nav a {
-            text-decoration: none;
-            padding: 1rem;
-            display: block;
-            color: var(--pico-color);
-        }
-        
-        nav a:hover {
-            color: var(--pico-primary);
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-        
-        footer {
-            background: var(--pico-card-background-color);
-            padding: 2rem 0;
-            margin-top: 3rem;
-            text-align: center;
-            border-top: 1px solid var(--pico-muted-border-color);
-        }
-        
-        .content {
-            padding: 3rem 0;
-        }
-        
-        .contact-card {
-            background: var(--pico-card-background-color);
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 0.5rem;
-            border-left: 4px solid var(--pico-primary);
-        }
-        
-        .contact-card h3 {
-            color: var(--pico-primary);
-            margin-bottom: 1rem;
-        }
-        
-        .resource-section {
-            background: var(--pico-primary-background);
-            padding: 2rem;
-            border-radius: 0.5rem;
-            margin: 2rem 0;
-        }
-        
-        .resource-link {
-            display: block;
-            background: var(--pico-card-background-color);
-            padding: 1rem;
-            margin: 1rem 0;
-            border-radius: 0.25rem;
-            text-decoration: none;
-            color: var(--pico-color);
-            border: 1px solid var(--pico-muted-border-color);
-            transition: all 0.2s ease;
-        }
-        
-        .resource-link:hover {
-            border-color: var(--pico-primary);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        
-        .resource-link h4 {
-            margin-bottom: 0.5rem;
-            color: var(--pico-primary);
-        }
-        
-        .getting-started {
-            background: var(--pico-card-background-color);
-            padding: 2rem;
-            border-radius: 0.5rem;
-            margin: 2rem 0;
-        }
-    </style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html" class="logo">SSODCA</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="fleets.html">Fleets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>SSODCA</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="fleets.html">Fleets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <header class="page-header">
-        <div class="container">
+    <main class="container">
+        <header>
             <h1>Contact Us</h1>
-            <p>Get in touch with the Skerry Sport One-Design Class Association</p>
-        </div>
-    </header>
+            <p>SUBContact Us</p>
+        </header>
 
-    <main class="content">
-        <div class="container">
-            <article>
-                <p>As a newly forming class association, we're excited to connect with current and prospective Skerry Sport owners and sailors. Whether you're interested in joining, have questions about the class, or want to help shape our young association, we'd love to hear from you!</p>
 
-                <h2>Get In Touch</h2>
-                
-                <div class="contact-card">
-                    <h3>📧 General Inquiries</h3>
-                    <p>For general questions about the class, membership, or how to get involved:</p>
-                    <p><strong>Contact:</strong> <a href="https://github.com/skerry-sport/website/issues" target="_blank">Create an issue on our GitHub repository</a></p>
-                    <p><small>As we're getting started, GitHub issues are the best way to reach us and ensure your inquiry doesn't get lost.</small></p>
-                </div>
 
-                <div class="contact-card">
-                    <h3>🏆 Membership & Fleets</h3>
-                    <p>Interested in joining the association or starting a local fleet?</p>
-                    <p><strong>What to include:</strong></p>
-                    <ul>
-                        <li>Your name and location</li>
-                        <li>Whether you own a Skerry Sport or are planning to build one</li>
-                        <li>Your interest in membership or fleet formation</li>
-                        <li>Any specific questions about the class</li>
-                    </ul>
-                </div>
-
-                <div class="contact-card">
-                    <h3>📏 Technical & Rules</h3>
-                    <p>Questions about class rules, boat measurement, or technical specifications?</p>
-                    <p>We're establishing our technical committee and measurement procedures. Your input will help shape these important aspects of our class.</p>
-                </div>
-
-                <div class="getting-started">
-                    <h2>New to Skerry Sport?</h2>
-                    <p>If you're just learning about the Skerry Sport and considering building or buying one, here's how to get started:</p>
-                    
-                    <ol>
-                        <li><strong>Learn about the boat:</strong> Visit <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a> to see the design, plans, and kit options</li>
-                        <li><strong>Connect with builders:</strong> Join online forums and communities to learn from experienced builders</li>
-                        <li><strong>Consider your rig:</strong> The Skerry Sport offers three rig options - Balanced Lug, Sprit, and Sloop</li>
-                        <li><strong>Join our community:</strong> Contact us to connect with other builders and sailors in your area</li>
-                    </ol>
-                </div>
-
-                <div class="resource-section">
-                    <h2>Useful Resources</h2>
-                    
-                    <a href="https://github.com/skerry-sport/documents" target="_blank" class="resource-link">
-                        <h4>📄 Founding Documents</h4>
-                        <p>Our class charter and complete rules repository</p>
-                    </a>
-                    
-                    <a href="https://clcboats.com" target="_blank" class="resource-link">
-                        <h4>🚢 Chesapeake Light Craft</h4>
-                        <p>The designer and publisher of Skerry kits and plans</p>
-                    </a>
-                    
-                    <a href="https://github.com/skerry-sport/website" target="_blank" class="resource-link">
-                        <h4>💻 Website Repository</h4>
-                        <p>Contribute to this website or report issues</p>
-                    </a>
-                </div>
-
-                <h2>Volunteer Opportunities</h2>
-                <p>As a new association, we need help with many activities:</p>
-                <ul>
-                    <li><strong>Officer Positions:</strong> We'll be electing our first officers at our inaugural AGM</li>
-                    <li><strong>Technical Committee:</strong> Help develop measurement procedures and rule interpretations</li>
-                    <li><strong>Fleet Development:</strong> Assist with organizing and supporting new fleets</li>
-                    <li><strong>Event Organization:</strong> Help plan our first championship regatta and other events</li>
-                    <li><strong>Communications:</strong> Assist with website development, social media, and member communications</li>
-                </ul>
-
-                <h2>Stay Updated</h2>
-                <p>While we're establishing our formal communication channels, here are the best ways to stay informed:</p>
-                <ul>
-                    <li><strong>GitHub:</strong> Watch our repositories for updates and announcements</li>
-                    <li><strong>Website:</strong> Check back here regularly for news and updates</li>
-                    <li><strong>Community:</strong> Connect with other Skerry Sport enthusiasts through sailing forums and CLC communities</li>
-                </ul>
-
-                <blockquote>
-                    <p><em>"We're excited to build this class association together with passionate sailors who appreciate the beauty and performance of the Skerry Sport. Your involvement and input will help shape the future of our class!"</em></p>
-                </blockquote>
-            </article>
-        </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.</p>
-            <p>The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a></p>
-        </div>
+    <footer class="container">
+        <small>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.<br>
+        The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a></small>
     </footer>
 </body>
 </html>
+        <article>
+            <h2>Get Connected</h2>
+            <p>We're excited to hear from Skerry Sport enthusiasts, builders, and sailors! Whether you have questions about the class, want to join, or are interested in starting a local fleet, we're here to help.</p>
+            
+            <h2>Association Officers</h2>
+            <div class="grid">
+                <article>
+                    <h3>📧 General Inquiries</h3>
+                    <p>For membership questions, general information, or getting started with the class.</p>
+                    <p><a href="mailto:info@skerrysport.org">info@skerrysport.org</a></p>
+                </article>
+                
+                <article>
+                    <h3>📏 Technical Questions</h3>
+                    <p>For class rules, measurement, and technical specifications.</p>
+                    <p><a href="mailto:measurer@skerrysport.org">measurer@skerrysport.org</a></p>
+                </article>
+            </div>
+            
+            <h2>Online Communities</h2>
+            <ul>
+                <li><strong>Official Documents:</strong> <a href="https://github.com/skerry-sport/documents" target="_blank">GitHub Repository</a></li>
+                <li><strong>CLC Community:</strong> <a href="https://forum.clcboats.com" target="_blank">CLC Forums</a> - Look for Skerry Sport discussions</li>
+                <li><strong>Facebook:</strong> Search for "Skerry Sport" groups and pages</li>
+            </ul>
+            
+            <h2>Resources</h2>
+            <h3>🛠️ Building Your Skerry Sport</h3>
+            <ul>
+                <li><a href="https://clcboats.com/shop/boats/recreational-boats/skerry-sport/" target="_blank">Official Skerry Sport page at CLC</a></li>
+                <li><a href="https://clcboats.com/shop/boats/recreational-boats/skerry-sport/skerry-sport-kit.html" target="_blank">Complete kit from CLC</a></li>
+                <li><a href="https://clcboats.com/shop/boat-plans/skerry-sport-plans.html" target="_blank">Plans only from CLC</a></li>
+            </ul>
+            
+            <h3>⭐ Class Documents</h3>
+            <ul>
+                <li><a href="https://github.com/skerry-sport/documents" target="_blank">Class charter and founding documents</a></li>
+                <li><a href="rules.html">Class rules summary</a></li>
+                <li><a href="membership.html">Membership information</a></li>
+            </ul>
+            
+            <h2>Volunteer Opportunities</h2>
+            <p>As a new class association, we're always looking for volunteers to help grow our community:</p>
+            <ul>
+                <li><strong>Fleet Captains:</strong> Lead local sailing groups</li>
+                <li><strong>Technical Committee:</strong> Help develop and refine class rules</li>
+                <li><strong>Events Coordination:</strong> Organize races and gatherings</li>
+                <li><strong>Communications:</strong> Newsletter, website, and social media</li>
+                <li><strong>Membership:</strong> Welcome new members and maintain records</li>
+            </ul>
+            
+            <p>Interested in volunteering? <a href="mailto:volunteer@skerrysport.org">Let us know how you'd like to help!</a></p>
+            
+            <h2>About Chesapeake Light Craft</h2>
+            <p>The Skerry Sport was designed by John Harris at <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a> (CLC). While our association is independent, we maintain a close relationship with CLC and appreciate their support for the class.</p>
+            
+            <p>CLC is located in Annapolis, Maryland, and has been designing and selling boat kits and plans for over 25 years. The Skerry Sport represents their expertise in creating beautiful, accessible boats for home builders.</p>
+        </article>

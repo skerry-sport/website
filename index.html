@@ -8,141 +8,46 @@
     
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    
-    <!-- Custom styles -->
-    <style>
-        :root {
-            --pico-font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
-        }
-        
-        .hero {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-        
-        .hero h1 {
-            margin-bottom: 1rem;
-            font-size: 2.5rem;
-        }
-        
-        .hero p {
-            font-size: 1.25rem;
-            opacity: 0.9;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .features {
-            padding: 3rem 0;
-        }
-        
-        .feature-card {
-            text-align: center;
-            padding: 2rem;
-            border-radius: 0.5rem;
-            background: var(--pico-card-background-color);
-            margin-bottom: 2rem;
-        }
-        
-        .feature-card h3 {
-            color: var(--pico-primary);
-            margin-bottom: 1rem;
-        }
-        
-        .cta-section {
-            background: var(--pico-card-background-color);
-            padding: 3rem 0;
-            text-align: center;
-            margin-top: 3rem;
-        }
-        
-        nav {
-            background: var(--pico-background-color);
-            border-bottom: 1px solid var(--pico-muted-border-color);
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        nav li {
-            margin: 0 1rem;
-        }
-        
-        nav a {
-            text-decoration: none;
-            padding: 1rem;
-            display: block;
-            color: var(--pico-color);
-        }
-        
-        nav a:hover {
-            color: var(--pico-primary);
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-        
-        footer {
-            background: var(--pico-card-background-color);
-            padding: 2rem 0;
-            margin-top: 3rem;
-            text-align: center;
-            border-top: 1px solid var(--pico-muted-border-color);
-        }
-    </style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html" class="logo">SSODCA</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="fleets.html">Fleets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>SSODCA</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="fleets.html">Fleets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <main>
-        <section class="hero">
-            <div class="container">
-                <h1>Skerry Sport One-Design Class Association</h1>
-                <p>Promoting sailing, racing, and fellowship among owners and sailors of boats built from the Skerry kit or plans by Chesapeake Light Craft</p>
+    <main class="container">
+        <header>
+            <h1>Skerry Sport One-Design Class Association</h1>
+            <p>Promoting sailing, racing, and fellowship among owners and sailors of boats built from the Skerry kit or plans by Chesapeake Light Craft</p>
+        </header>
+
+        <section>
+            <div class="grid">
+                <article>
+                    <h3>🏆 One-Design Racing</h3>
+                    <p>Fair competition where sailing skill outweighs construction differences. Our class rules ensure consistent, exciting racing across all fleets.</p>
+                </article>
+                <article>
+                    <h3>🚢 Beautiful Boats</h3>
+                    <p>The Skerry Sport is a stunning 15-foot double-ended glued-lapstrake plywood boat designed by John Harris at Chesapeake Light Craft.</p>
+                </article>
+                <article>
+                    <h3>🤝 Community</h3>
+                    <p>Join a growing community of boat builders and sailors. Form local fleets, share experiences, and enjoy fellowship on and off the water.</p>
+                </article>
             </div>
         </section>
 
-        <section class="features">
-            <div class="container">
-                <div class="grid">
-                    <div class="feature-card">
-                        <h3>🏆 One-Design Racing</h3>
-                        <p>Fair competition where sailing skill outweighs construction differences. Our class rules ensure consistent, exciting racing across all fleets.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>🚢 Beautiful Boats</h3>
-                        <p>The Skerry Sport is a stunning 15-foot double-ended glued-lapstrake plywood boat designed by John Harris at Chesapeake Light Craft.</p>
-                    </div>
-                    <div class="feature-card">
-                        <h3>🤝 Community</h3>
-                        <p>Join a growing community of boat builders and sailors. Form local fleets, share experiences, and enjoy fellowship on and off the water.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="container">
+        <section>
             <article>
                 <h2>Welcome to Our New Class</h2>
                 <p>The Skerry Sport One-Design Class Association (SSODCA) is a nascent sailing class just getting started. We're excited to bring together owners and sailors of boats built from the Skerry kit or plans as published by Chesapeake Light Craft.</p>
@@ -157,24 +62,15 @@
                     <li><strong>Builder-Friendly:</strong> We understand that home-built boats will have natural variations and account for this in our rules</li>
                     <li><strong>Growing Community:</strong> Be part of establishing a new class with sailors who share your passion for these beautiful boats</li>
                 </ul>
+                
+                <p><a href="membership.html" role="button">Join Now</a> <a href="contact.html" role="button" class="secondary">Learn More</a></p>
             </article>
-        </section>
-
-        <section class="cta-section">
-            <div class="container">
-                <h2>Ready to Get Started?</h2>
-                <p>Whether you're building your first Skerry Sport or already sailing one, we'd love to have you join our association.</p>
-                <a href="membership.html" role="button">Join Now</a>
-                <a href="contact.html" role="button" class="secondary">Learn More</a>
-            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.</p>
-            <p>The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a></p>
-        </div>
+    <footer class="container">
+        <small>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.<br>
+        The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a></small>
     </footer>
 </body>
 </html>

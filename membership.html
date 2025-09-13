@@ -8,232 +8,132 @@
     
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    
-    <!-- Custom styles -->
-    <style>
-        :root {
-            --pico-font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        nav {
-            background: var(--pico-background-color);
-            border-bottom: 1px solid var(--pico-muted-border-color);
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        nav li {
-            margin: 0 1rem;
-        }
-        
-        nav a {
-            text-decoration: none;
-            padding: 1rem;
-            display: block;
-            color: var(--pico-color);
-        }
-        
-        nav a:hover {
-            color: var(--pico-primary);
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-        
-        footer {
-            background: var(--pico-card-background-color);
-            padding: 2rem 0;
-            margin-top: 3rem;
-            text-align: center;
-            border-top: 1px solid var(--pico-muted-border-color);
-        }
-        
-        .content {
-            padding: 3rem 0;
-        }
-        
-        .membership-card {
-            background: var(--pico-card-background-color);
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 0.5rem;
-            border: 2px solid var(--pico-muted-border-color);
-        }
-        
-        .membership-card.featured {
-            border-color: var(--pico-primary);
-            position: relative;
-        }
-        
-        .membership-card.featured::before {
-            content: "Most Popular";
-            position: absolute;
-            top: -12px;
-            left: 2rem;
-            background: var(--pico-primary);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 0.25rem;
-            font-size: 0.875rem;
-            font-weight: bold;
-        }
-        
-        .membership-card h3 {
-            color: var(--pico-primary);
-            margin-bottom: 1rem;
-        }
-        
-        .benefits {
-            background: var(--pico-primary-background);
-            padding: 2rem;
-            border-radius: 0.5rem;
-            margin: 2rem 0;
-        }
-        
-        .cta-section {
-            background: var(--pico-card-background-color);
-            padding: 3rem 0;
-            text-align: center;
-            margin-top: 3rem;
-            border-radius: 0.5rem;
-        }
-    </style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html" class="logo">SSODCA</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="fleets.html">Fleets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>SSODCA</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="fleets.html">Fleets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <header class="page-header">
-        <div class="container">
+    <main class="container">
+        <header>
             <h1>Membership</h1>
             <p>Join our growing community of Skerry Sport sailors</p>
-        </div>
-    </header>
+        </header>
 
-    <main class="content">
-        <div class="container">
-            <article>
-                <h2>Eligibility</h2>
-                <p>Any person who owns, sails, or supports a Skerry Sport boat is eligible for membership in the Skerry Sport One-Design Class Association.</p>
-
-                <h2>Membership Types</h2>
+        <article>
+            <h2>Membership Types</h2>
+            
+            <div class="grid">
+                <article>
+                    <h3>Full Member</h3>
+                    <p><strong>$25/year</strong></p>
+                    <ul>
+                        <li>Voting rights in association matters</li>
+                        <li>Eligible to hold office</li>
+                        <li>Access to member directory</li>
+                        <li>Discounts on class events</li>
+                        <li>Technical support from class measurer</li>
+                    </ul>
+                    <p><em>Requirements: Own or actively sail a Skerry Sport</em></p>
+                </article>
                 
-                <div class="grid">
-                    <div class="membership-card featured">
-                        <h3>🏆 Full Member</h3>
-                        <p><strong>For:</strong> Owners or primary skippers of eligible boats</p>
-                        <h4>Benefits:</h4>
-                        <ul>
-                            <li>Voting rights at Annual General Meeting</li>
-                            <li>Eligible to run for Association officers</li>
-                            <li>Full participation in class governance</li>
-                            <li>Access to measurement certificates</li>
-                            <li>Fleet formation privileges</li>
-                            <li>Championship regatta eligibility</li>
-                        </ul>
-                        <p><strong>Annual Dues:</strong> To be determined at first AGM</p>
-                    </div>
-                    
-                    <div class="membership-card">
-                        <h3>⚓ Associate Member</h3>
-                        <p><strong>For:</strong> Crew, supporters, or enthusiasts without an eligible boat</p>
-                        <h4>Benefits:</h4>
-                        <ul>
-                            <li>Participation in class events and activities</li>
-                            <li>Access to class communications and resources</li>
-                            <li>Support for community building initiatives</li>
-                            <li>Invitation to Annual General Meeting (non-voting)</li>
-                            <li>Access to technical resources and forums</li>
-                        </ul>
-                        <p><strong>Annual Dues:</strong> To be determined at first AGM</p>
-                    </div>
-                </div>
+                <article>
+                    <h3>Associate Member</h3>
+                    <p><strong>$15/year</strong></p>
+                    <ul>
+                        <li>Stay informed about class activities</li>
+                        <li>Access to technical resources</li>
+                        <li>Invitations to social events</li>
+                        <li>Building support and advice</li>
+                    </ul>
+                    <p><em>Perfect for builders and sailing enthusiasts</em></p>
+                </article>
+            </div>
+            
+            <h2>How to Join</h2>
+            <ol>
+                <li><strong>Choose your membership type</strong> - Full or Associate</li>
+                <li><strong>Complete the application</strong> - Available in our <a href="https://github.com/skerry-sport/documents" target="_blank">documents repository</a></li>
+                <li><strong>Submit payment</strong> - PayPal, check, or bank transfer options available</li>
+                <li><strong>Welcome!</strong> - You'll receive a confirmation and member information packet</li>
+            </ol>
+            
+            <h2>Member Benefits</h2>
+            <ul>
+                <li><strong>Technical Support:</strong> Access to class measurer and building experts</li>
+                <li><strong>Events:</strong> Exclusive access to class championships and gatherings</li>
+                <li><strong>Community:</strong> Connect with Skerry Sport sailors worldwide</li>
+                <li><strong>Resources:</strong> Building tips, sailing techniques, and class news</li>
+                <li><strong>Advocacy:</strong> Representation in sailing associations and events</li>
+            </ul>
+            
+            <p><a href="contact.html" role="button">Get Started Today</a></p>
+        </article>
 
-                <div class="benefits">
-                    <h2>Why Join?</h2>
-                    <div class="grid">
-                        <div>
-                            <h4>🚢 Connect with Fellow Sailors</h4>
-                            <p>Join a community of passionate Skerry Sport owners and sailors. Share experiences, tips, and stories with like-minded enthusiasts.</p>
-                        </div>
-                        <div>
-                            <h4>🏁 Participate in Racing</h4>
-                            <p>Access to organized racing events, championship regattas, and local fleet activities with consistent, fair rules.</p>
-                        </div>
-                        <div>
-                            <h4>📚 Access Resources</h4>
-                            <p>Get access to technical resources, building tips, sailing guides, and maintenance advice from experienced members.</p>
-                        </div>
-                        <div>
-                            <h4>🗳️ Shape the Class</h4>
-                            <p>Full members have voting rights to help determine the future direction of the class, rule changes, and governance decisions.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2>Getting Started</h2>
-                <p>As a new class association, we're still in the process of setting up our formal membership structure. Here's how you can get involved:</p>
-
-                <ol>
-                    <li><strong>Express Interest:</strong> Contact us to let us know you're interested in joining</li>
-                    <li><strong>Stay Informed:</strong> We'll keep you updated on the first Annual General Meeting where membership dues and procedures will be established</li>
-                    <li><strong>Join a Fleet:</strong> Look for local Skerry Sport fleets in your area or help start one</li>
-                    <li><strong>Participate:</strong> Get involved in class discussions and help shape our young association</li>
-                </ol>
-
-                <h2>Fleet Formation</h2>
-                <p>Any group of three or more eligible boats may form a Fleet. Fleets:</p>
-                <ul>
-                    <li>Elect a Fleet Captain and register with the Association</li>
-                    <li>May establish local policies, provided they don't contradict Class Rules</li>
-                    <li>Organize local racing and social events</li>
-                    <li>Serve as the primary point of contact for local sailors</li>
-                </ul>
-
-                <h2>Annual Dues</h2>
-                <p>Annual dues will be set by vote of the membership at our first Annual General Meeting (AGM). We're committed to keeping dues affordable and accessible to encourage broad participation in our class.</p>
-
-                <div class="cta-section">
-                    <h2>Ready to Join?</h2>
-                    <p>We're excited to welcome new members to our growing class association!</p>
-                    <a href="contact.html" role="button">Contact Us to Join</a>
-                    <a href="fleets.html" role="button" class="secondary">Find a Local Fleet</a>
-                </div>
-            </article>
-        </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.</p>
-            <p>The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a></p>
-        </div>
+    <footer class="container">
+        <small>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.<br>
+        The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a></small>
     </footer>
 </body>
 </html>
+        <article>
+            <h2>Membership Types</h2>
+            
+            <div class="grid">
+                <article>
+                    <h3>Full Member</h3>
+                    <p><strong>$25/year</strong></p>
+                    <ul>
+                        <li>Voting rights in association matters</li>
+                        <li>Eligible to hold office</li>
+                        <li>Access to member directory</li>
+                        <li>Discounts on class events</li>
+                        <li>Technical support from class measurer</li>
+                    </ul>
+                    <p><em>Requirements: Own or actively sail a Skerry Sport</em></p>
+                </article>
+                
+                <article>
+                    <h3>Associate Member</h3>
+                    <p><strong>$15/year</strong></p>
+                    <ul>
+                        <li>Stay informed about class activities</li>
+                        <li>Access to technical resources</li>
+                        <li>Invitations to social events</li>
+                        <li>Building support and advice</li>
+                    </ul>
+                    <p><em>Perfect for builders and sailing enthusiasts</em></p>
+                </article>
+            </div>
+            
+            <h2>How to Join</h2>
+            <ol>
+                <li><strong>Choose your membership type</strong> - Full or Associate</li>
+                <li><strong>Complete the application</strong> - Available in our <a href="https://github.com/skerry-sport/documents" target="_blank">documents repository</a></li>
+                <li><strong>Submit payment</strong> - PayPal, check, or bank transfer options available</li>
+                <li><strong>Welcome!</strong> - You'll receive a confirmation and member information packet</li>
+            </ol>
+            
+            <h2>Member Benefits</h2>
+            <ul>
+                <li><strong>Technical Support:</strong> Access to class measurer and building experts</li>
+                <li><strong>Events:</strong> Exclusive access to class championships and gatherings</li>
+                <li><strong>Community:</strong> Connect with Skerry Sport sailors worldwide</li>
+                <li><strong>Resources:</strong> Building tips, sailing techniques, and class news</li>
+                <li><strong>Advocacy:</strong> Representation in sailing associations and events</li>
+            </ul>
+            
+            <p><a href="contact.html" role="button">Get Started Today</a></p>
+        </article>

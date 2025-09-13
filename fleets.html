@@ -8,262 +8,88 @@
     
     <!-- PicoCSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
-    
-    <!-- Custom styles -->
-    <style>
-        :root {
-            --pico-font-family: system-ui, -apple-system, "Segoe UI", "Roboto", "Ubuntu", "Cantarell", "Noto Sans", sans-serif;
-        }
-        
-        .page-header {
-            background: linear-gradient(135deg, #1e40af 0%, #3b82f6 100%);
-            color: white;
-            padding: 2rem 0;
-            text-align: center;
-        }
-        
-        nav {
-            background: var(--pico-background-color);
-            border-bottom: 1px solid var(--pico-muted-border-color);
-        }
-        
-        nav ul {
-            display: flex;
-            justify-content: center;
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        
-        nav li {
-            margin: 0 1rem;
-        }
-        
-        nav a {
-            text-decoration: none;
-            padding: 1rem;
-            display: block;
-            color: var(--pico-color);
-        }
-        
-        nav a:hover {
-            color: var(--pico-primary);
-        }
-        
-        .logo {
-            font-weight: bold;
-            font-size: 1.25rem;
-        }
-        
-        footer {
-            background: var(--pico-card-background-color);
-            padding: 2rem 0;
-            margin-top: 3rem;
-            text-align: center;
-            border-top: 1px solid var(--pico-muted-border-color);
-        }
-        
-        .content {
-            padding: 3rem 0;
-        }
-        
-        .fleet-card {
-            background: var(--pico-card-background-color);
-            padding: 2rem;
-            margin: 2rem 0;
-            border-radius: 0.5rem;
-            border-left: 4px solid var(--pico-primary);
-        }
-        
-        .fleet-placeholder {
-            background: var(--pico-muted-background-color);
-            padding: 3rem;
-            text-align: center;
-            border-radius: 0.5rem;
-            margin: 2rem 0;
-            border: 2px dashed var(--pico-muted-border-color);
-        }
-        
-        .steps {
-            background: var(--pico-primary-background);
-            padding: 2rem;
-            border-radius: 0.5rem;
-            margin: 2rem 0;
-        }
-        
-        .step {
-            display: flex;
-            align-items: flex-start;
-            margin: 1.5rem 0;
-        }
-        
-        .step-number {
-            background: var(--pico-primary);
-            color: white;
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 1rem;
-            flex-shrink: 0;
-            font-weight: bold;
-        }
-        
-        .step-content {
-            flex: 1;
-        }
-        
-        .cta-section {
-            background: var(--pico-card-background-color);
-            padding: 3rem 0;
-            text-align: center;
-            margin-top: 3rem;
-            border-radius: 0.5rem;
-        }
-    </style>
 </head>
 <body>
-    <nav>
-        <div class="container">
-            <ul>
-                <li><a href="index.html" class="logo">SSODCA</a></li>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="rules.html">Rules</a></li>
-                <li><a href="membership.html">Membership</a></li>
-                <li><a href="fleets.html">Fleets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>SSODCA</strong></li>
+        </ul>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="rules.html">Rules</a></li>
+            <li><a href="membership.html">Membership</a></li>
+            <li><a href="fleets.html">Fleets</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
     </nav>
 
-    <header class="page-header">
-        <div class="container">
+    <main class="container">
+        <header>
             <h1>Local Fleets</h1>
-            <p>Connect with Skerry Sport sailors in your area</p>
-        </div>
-    </header>
+            <p>SUBLocal Fleets</p>
+        </header>
 
-    <main class="content">
-        <div class="container">
-            <article>
-                <h2>What is a Fleet?</h2>
-                <p>A Fleet is a group of three or more eligible Skerry Sport boats that organize locally for racing, events, and fellowship. Fleets serve as the primary point of contact for sailors in a geographic area and help organize local activities within the broader class association.</p>
 
-                <h2>Current Fleets</h2>
-                <div class="fleet-placeholder">
-                    <h3>🚢 Be the First!</h3>
-                    <p>As a new class association, we don't have any established fleets yet. This is your opportunity to be a founding member of the first Skerry Sport fleets!</p>
-                    <p><strong>Ready to start a fleet in your area?</strong></p>
-                    <a href="#start-fleet" role="button">Learn How to Start a Fleet</a>
-                </div>
 
-                <h2 id="start-fleet">Starting a New Fleet</h2>
-                <p>Any group of three or more eligible boats may form a Fleet. Here's how to get started:</p>
-
-                <div class="steps">
-                    <div class="step">
-                        <div class="step-number">1</div>
-                        <div class="step-content">
-                            <h4>Find Fellow Sailors</h4>
-                            <p>Connect with other Skerry Sport owners or builders in your area. You need at least three boats to form a fleet. Check local sailing clubs, online forums, or CLC owner groups.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">2</div>
-                        <div class="step-content">
-                            <h4>Elect a Fleet Captain</h4>
-                            <p>Choose someone to serve as your Fleet Captain. This person will be your primary contact with the class association and help organize local activities.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">3</div>
-                        <div class="step-content">
-                            <h4>Register with the Association</h4>
-                            <p>Contact the class association to register your new fleet. Provide fleet name, location, Fleet Captain contact information, and list of founding boats.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">4</div>
-                        <div class="step-content">
-                            <h4>Establish Local Policies</h4>
-                            <p>Develop any local policies or procedures you need, provided they don't contradict the class rules. Consider things like racing schedules, social events, and measurement procedures.</p>
-                        </div>
-                    </div>
-                    
-                    <div class="step">
-                        <div class="step-number">5</div>
-                        <div class="step-content">
-                            <h4>Start Sailing!</h4>
-                            <p>Begin organizing races, fun sails, and social events. Help grow your local Skerry Sport community!</p>
-                        </div>
-                    </div>
-                </div>
-
-                <h2>Fleet Responsibilities</h2>
-                <p>As a recognized fleet, you'll have certain responsibilities and privileges:</p>
-
-                <div class="grid">
-                    <div class="fleet-card">
-                        <h3>📏 Measurement</h3>
-                        <p>Appoint a fleet measurer to handle boat measurement and certification for racing eligibility.</p>
-                    </div>
-                    
-                    <div class="fleet-card">
-                        <h3>🏁 Local Racing</h3>
-                        <p>Organize local races and events following class rules and sailing regulations.</p>
-                    </div>
-                    
-                    <div class="fleet-card">
-                        <h3>📢 Communication</h3>
-                        <p>Serve as liaison between local sailors and the class association, sharing news and updates.</p>
-                    </div>
-                    
-                    <div class="fleet-card">
-                        <h3>🤝 Community</h3>
-                        <p>Foster fellowship among local Skerry Sport sailors through social events and activities.</p>
-                    </div>
-                </div>
-
-                <h2>Fleet Autonomy</h2>
-                <p>Fleets have significant autonomy to organize themselves according to local needs and preferences:</p>
-                <ul>
-                    <li><strong>Racing Formats:</strong> Choose course types, scoring systems, and series formats that work for your area</li>
-                    <li><strong>Local Policies:</strong> Establish additional local policies (e.g., crew weight rules, handicaps) as long as they don't contradict class rules</li>
-                    <li><strong>Event Schedule:</strong> Set your own racing and social event calendar</li>
-                    <li><strong>Meeting Frequency:</strong> Determine how often your fleet meets and communicates</li>
-                </ul>
-
-                <h2>Support for New Fleets</h2>
-                <p>The class association is committed to supporting new fleets:</p>
-                <ul>
-                    <li>Guidance on organizing and running a fleet</li>
-                    <li>Template documents for fleet policies and procedures</li>
-                    <li>Connection with other fleets for sharing best practices</li>
-                    <li>Technical support for measurement and rule interpretation</li>
-                    <li>Promotion of your fleet activities to attract new members</li>
-                </ul>
-
-                <div class="cta-section">
-                    <h2>Ready to Start or Join a Fleet?</h2>
-                    <p>Whether you want to start a new fleet or join an existing one, we're here to help!</p>
-                    <a href="contact.html" role="button">Contact Us</a>
-                    <a href="membership.html" role="button" class="secondary">Learn About Membership</a>
-                </div>
-            </article>
-        </div>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.</p>
-            <p>The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeape Light Craft</a></p>
-        </div>
+    <footer class="container">
+        <small>&copy; 2024 Skerry Sport One-Design Class Association. All rights reserved.<br>
+        The Skerry Sport is designed by <a href="https://clcboats.com" target="_blank">Chesapeake Light Craft</a></small>
     </footer>
 </body>
 </html>
+        <article>
+            <h2>Current Fleets</h2>
+            <p>As a new class association, we're working to establish fleets around the world. Here's where we're getting started:</p>
+            
+            <h3>🇺🇸 Pacific Northwest</h3>
+            <p><strong>Status:</strong> Forming<br>
+            <strong>Area:</strong> Puget Sound, Washington<br>
+            <strong>Contact:</strong> <a href="contact.html">Get in touch</a> to connect with local sailors</p>
+            
+            <h3>🇺🇸 Chesapeake Bay</h3>
+            <p><strong>Status:</strong> Interest building<br>
+            <strong>Area:</strong> Maryland and Virginia<br>
+            <strong>Contact:</strong> Near the home of Chesapeake Light Craft - natural home for Skerry Sports!</p>
+            
+            <h3>🇺🇸 Great Lakes</h3>
+            <p><strong>Status:</strong> Exploring<br>
+            <strong>Area:</strong> Michigan, Ohio, New York<br>
+            <strong>Contact:</strong> Several builders active in the region</p>
+            
+            <h2>Starting a New Fleet</h2>
+            <p>Interested in starting a Skerry Sport fleet in your area? We'd love to help! Here's what you need:</p>
+            
+            <h3>Minimum Requirements</h3>
+            <ul>
+                <li><strong>3+ boats</strong> in your sailing area</li>
+                <li><strong>1 fleet captain</strong> to coordinate activities</li>
+                <li><strong>Local sailing venue</strong> - yacht club, sailing association, or public waters</li>
+                <li><strong>Interest in regular racing or sailing</strong> together</li>
+            </ul>
+            
+            <h3>What We Provide</h3>
+            <ul>
+                <li><strong>Official recognition</strong> as a SSODCA fleet</li>
+                <li><strong>Technical support</strong> from class measurer</li>
+                <li><strong>Racing handicaps</strong> and rule guidance</li>
+                <li><strong>Promotional materials</strong> to attract new members</li>
+                <li><strong>Connection</strong> to other fleets and the broader community</li>
+            </ul>
+            
+            <h3>Fleet Benefits</h3>
+            <ul>
+                <li>Organize local races and events</li>
+                <li>Build community among local Skerry Sport sailors</li>
+                <li>Participate in class championships</li>
+                <li>Share building tips and sailing techniques</li>
+                <li>Welcome new builders and sailors to the class</li>
+            </ul>
+            
+            <h2>Join the Movement</h2>
+            <p>Whether you're building your first Skerry Sport or have been sailing one for years, we'd love to connect you with other sailors in your area.</p>
+            
+            <p><a href="contact.html" role="button">Start a Fleet</a> <a href="membership.html" role="button" class="secondary">Join the Association</a></p>
+        </article>
